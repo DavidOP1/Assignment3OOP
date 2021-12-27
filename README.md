@@ -1,6 +1,5 @@
 # Assignment3OOP
-# Assignment2_OOP
-Assignment2 in course OOP, programming language : JAVA
+Assignment2 in course OOP, programming language : Python
 
 Name: David Ehevich, ID:212757405
 Name: Liel Zilberman, ID: 212480974
@@ -19,26 +18,23 @@ Explaining the assignment:
 
 The subject of the assignment is graphs. We were given interfaces which we need to implement.//complete here
 
-NodeData interface: gives us information about the node(vertex), ID , location, etc...
+NodeData : gives us information about the node(vertex), ID , location, etc...
 
 EdgeData interface: gives us information about the edge, since it's a directed graph , this edge has source node and destination node. We can also get the weight of this node.
 
-GeoLocation interface: gives us information about the location of the node in the graph, (x,y,z).
+GeoLocation class: gives us information about the location of the node in the graph, (x,y,z).
 
 We added a GUI class in which we implement the drawing of the menu and graph.
 
-DirectedWeightedGraph interface: this interface allows us to add new nodes to the graph with existed edges, we can also add new edges to the graph if we want. Just like adding we can also remove edges and nodes, we can get nodes by their ID's also get edges by entering their source node and destination node. You can algo get an iterator for all of the edges of the graph, all of the nodes of the graph, or all of the edges of a specific node. We have a variable called MC which keeps track with changes made to the graph , so when creating the iterator a change in the graph has occured, a RunTime error will be thrown. You can also get the amount of nodes and edges in the graph.
+graph interface: this interface allows us to add new nodes to the graph with existed edges, we can also add new edges to the graph if we want. Just like adding we can also remove edges and nodes, we can get nodes by their ID's also get edges by entering their source node and destination node. You can algo get an iterator for all of the edges of the graph, all of the nodes of the graph, or all of the edges of a specific node. We have a variable called MC which keeps track with changes made to the graph , so when creating the iterator a change in the graph has occured, a RunTime error will be thrown. You can also get the amount of nodes and edges in the graph.
 
 Note: Getting a edge, adding a node, adding or removing a edge from the graph, are done in O(1) complexity, removing a node from the graph is done in O(K) complexity , when 
 V.degree=k.
 --
-DirectedWeightedGraphsAlgorithms: this is the most important interface, in here we implement all of the algroithms which are being used in the graph.
+GraphAlgorithms: this is the most important interface, in here we implement all of the algroithms which are being used in the graph.
 this interface will allow you to get the shortest path distance between 2 nodes, and get the routh which it takes to get to the node.
 We can also check if the current graph is strongly connected, get it's center and do TSP on a given list of citites.
 This interface will also allow you to load graph data from a JSON file, or if you create a graph your self , you will be able to save this graph into a JSON file as well.
-
-Note: I added my own class which is called Pair which hold  the values,(index,distance) index of the node we currently travel with , and the distance we made with it so far.
-I created this class to use it in our priority queue which is being used in the Dijkstra algorithm, we pull items form the priority queue by the smallest distance available in the queue, and this being done by the comparator, in the Pair class.
 --
 Explaining the algorithms:
 --
@@ -72,7 +68,37 @@ We are given a list of cities which we need to visit, between every 2 pairs of c
 
 Time Results:(Everything tested in Junit5)
 --
-Loading from json:
+Loading from json Java results:
+
+1000 nodes 9000 edges: 125 ms
+
+10000 nodes 90000 edges: 410 ms
+
+100000 nodes 900000 edges: 4 sec 954 ms
+
+1000000 nodes 9000000 edges: 16 sec 346 ms
+
+Checking if a graph is connected:
+
+1000 nodes 9000 edges: 157 ms
+
+10000 nodes 90000 edges: 517 ms
+
+100000 nodes 900000 edges: 6 sec 551 ms
+
+1000000 nodes 9000000 edges: 18  sec 432 ms false result
+
+Checking center of graph:
+
+1000 nodes 9000 edges: 1 sec 748 ms
+
+10000 nodes 90000 edges: 3 minutes 37 sec
+
+100000 nodes 900000 edges: timeout
+
+1000000 nodes 9000000 edges: timeout
+
+Loading from json Python results:
 
 1000 nodes 9000 edges: 125 ms
 
@@ -104,13 +130,14 @@ Checking center of graph:
 
 UML:
 --
-![WhatsApp Image 2021-12-09 at 14 49 49](https://user-images.githubusercontent.com/54214707/145421909-49b43e98-d0c7-422b-88f3-e06f86ecde9a.jpeg)
+
 
 Note:
 --
- How to run the program using the jar:
-  Make sure you have the jar file and json  data file of the graph in the same directory, then in the cmd,
-  Type: java -jar Ex2.jar "json file name"
+Explaining the files and directories:
+
+How to run this whole program:
+
 How to use the gui:
 In the screen opened there is a drop down menu on the left corner, file which will aloow you to load , save files or draw the graph.
 
