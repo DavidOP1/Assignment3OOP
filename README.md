@@ -100,29 +100,29 @@ Checking center of graph:
 
 Loading from json Python results:
 --
-1000 nodes 9000 edges: 125 ms
+1000 nodes 9000 edges: 47 ms
 
-10000 nodes 90000 edges: 410 ms
+10000 nodes 90000 edges: 554 ms
 
 100000 nodes 900000 edges: 4 sec 954 ms
 
-1000000 nodes 9000000 edges: 16 sec 346 ms
+1000000 nodes 9000000 edges: 22 sec 856 ms
 
 Checking if a graph is connected:
 
-1000 nodes 9000 edges: 157 ms
+1000 nodes 9000 edges: 105 ms
 
-10000 nodes 90000 edges: 517 ms
+10000 nodes 90000 edges: 1.123 sec
 
 100000 nodes 900000 edges: 6 sec 551 ms
 
-1000000 nodes 9000000 edges: 18  sec 432 ms false result
+1000000 nodes 9000000 edges: 35  sec 578 ms false result
 
 Checking center of graph:
 
-1000 nodes 9000 edges: 1 sec 748 ms
+1000 nodes 9000 edges:  31.071 sec
 
-10000 nodes 90000 edges: 3 minutes 37 sec
+10000 nodes 90000 edges: timeout
 
 100000 nodes 900000 edges: timeout
 
