@@ -100,29 +100,29 @@ Checking center of graph:
 
 Loading from json Python results:
 --
-1000 nodes 9000 edges: 47 ms
+1000 nodes 9000 edges: 125 ms
 
-10000 nodes 90000 edges: 554 ms
+10000 nodes 90000 edges: 410 ms
 
 100000 nodes 900000 edges: 4 sec 954 ms
 
-1000000 nodes 9000000 edges: 22 sec 856 ms
+1000000 nodes 9000000 edges: 16 sec 346 ms
 
 Checking if a graph is connected:
 
-1000 nodes 9000 edges: 105 ms
+1000 nodes 9000 edges: 157 ms
 
-10000 nodes 90000 edges: 1.123 sec
+10000 nodes 90000 edges: 517 ms
 
 100000 nodes 900000 edges: 6 sec 551 ms
 
-1000000 nodes 9000000 edges: 35  sec 578 ms false result
+1000000 nodes 9000000 edges: 18  sec 432 ms false result
 
 Checking center of graph:
 
-1000 nodes 9000 edges:  31.071 sec
+1000 nodes 9000 edges: 1 sec 748 ms
 
-10000 nodes 90000 edges: timeout
+10000 nodes 90000 edges: 3 minutes 37 sec
 
 100000 nodes 900000 edges: timeout
 
@@ -130,6 +130,8 @@ Checking center of graph:
 
 UML:
 --
+![image](https://user-images.githubusercontent.com/93929255/147497361-d1731a7c-3457-478f-b0a3-910a0b54f265.png)
+
 
 
 Note:
@@ -138,11 +140,30 @@ Explaining the files and directories:
 
 How to run this whole program:
 
-How to use the gui:
-In the screen opened there is a drop down menu on the left corner, file which will aloow you to load , save files or draw the graph.
 
-Edit button will allow you to add new edges , add new nodes or remove nodes and edges.
 
-Algorithm button will allow you any of the algorithms which we were requested to implement. (center,shortest path route and is the loaded graph connected).
+How to use the menu (GUI):
+--
+in order to open the graphical menu the user has to run the main.py file, after running the main.py file, the menu will be opened
+
+in the menu the user can do all sorts of graphical things with the graph, but first, the user has to load a json file...
+to do so, just press the 'File' button at the top left of the window and then press 'Load', after that a dialog will appear, just enter the file name there
+for example: "A0.json"
+
+after loading the json file you are ready to start whatever you want with the graph:
+File:
+1. Draw a graph - that button will draw the *current* graph (the loaded graph) 
+2. Save - that button will save the *current* graph with all the changes that you have done
+3. Load - that button will load a graph from a json file (you can do that how many times you want)
+
+Edit:
+1. Disconnect nodes - that button will remove any edge you want, by entering the src node and the dest node.
+2. Connent nodes - that button will create a new edge, by connecting two nodes according to the input (src, dest, weight)
+3. Remove a node - that button will remove any node you want, by entering the src node and the dest node.
+4. Add a node - that button will create a new node, according to the input (key(id), x pos, y pos)
+
+after commiting changes the user is free to draw the new graph by pressing 'Draw a graph' or save it by pressing 'Save'
+
+enjoy the menu :) 
 
 
