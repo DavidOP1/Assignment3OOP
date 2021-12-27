@@ -151,6 +151,7 @@ to do so, just press the 'File' button at the top left of the window and then pr
 for example: "A0.json"
 
 after loading the json file you are ready to start whatever you want with the graph:
+
 File:
 1. Draw a graph - that button will draw the *current* graph (the loaded graph) 
 2. Save - that button will save the *current* graph with all the changes that you have done
