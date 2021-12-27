@@ -69,7 +69,7 @@ We are given a list of cities which we need to visit, between every 2 pairs of c
 Time Results:(Everything tested in Junit5)
 --
 Loading from json Java results:
-
+--
 1000 nodes 9000 edges: 125 ms
 
 10000 nodes 90000 edges: 410 ms
@@ -99,7 +99,7 @@ Checking center of graph:
 1000000 nodes 9000000 edges: timeout
 
 Loading from json Python results:
-
+--
 1000 nodes 9000 edges: 125 ms
 
 10000 nodes 90000 edges: 410 ms
