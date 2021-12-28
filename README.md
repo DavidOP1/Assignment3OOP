@@ -18,7 +18,7 @@ Explaining the assignment:
 
 The subject of the assignment is graphs. We were given interfaces which we need to implement.//complete here
 
-NodeData : gives us information about the node(vertex), ID , location, etc...
+NodeData : gives us information about the node(vertex), ID , location, etc, has 2 dict one which stores the edges coming into the vertex and one that stores the edges coming out of the vertx.
 
 EdgeData interface: gives us information about the edge, since it's a directed graph , this edge has source node and destination node. We can also get the weight of this node.
 
@@ -134,13 +134,11 @@ UML:
 
 
 
-Note:
+How to run the project:
 --
-Explaining the files and directories:
-
-How to run this whole program:
-
-
+In the repo you have the src folder, all the files there must be in the src directory in your python IDE, if you want to load
+json files easily by just entering the name, e.g : "A0.json" this json file has so be in the same directory.
+the main.py file in the src folder is the file which run the tests given by our lecturer.
 
 How to use the menu (GUI):
 --
