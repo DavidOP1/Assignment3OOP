@@ -142,6 +142,22 @@ In the repo you have the src folder, all the files there must be in the src dire
 json files easily by just entering the name, e.g : "A0.json" this json file has so be in the same directory.
 the main.py file in the src folder is the file which run the tests given by our lecturer.
 
+#For convenience we have put all the necessary files under the src folder in the git.
+
+For everything to work properly , Create a new folder in your IDE named src , and import all of the files in the git to that folder.
+
+You have 2 files to run the program from, Ex3.py to run everything from the GUI, or main.py where we have run the tests given us by the lecturers.
+
+If you want to load
+
+Example of how to run the code manually:
+
+graphAlgo=GraphAlgo() #initialize empty GraphAlgo object.
+
+graphAlgo.load_from_json('file_name'.json) #file name of the json file which has the graph data in it. the file must be in the same folder!
+
+#From here you can run all of the functions available in the GrahpAlgo class on the graph you loaded.
+
 How to use the menu (GUI):
 --
 in order to open the graphical menu the user has to run the main.py file, after running the main.py file, the menu will be opened
