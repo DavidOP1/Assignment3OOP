@@ -1,5 +1,5 @@
 # Assignment3OOP
-Assignment2 in course OOP, programming language : Python
+Assignment3 in course OOP, programming language : Python
 
 Name: David Ehevich, ID:212757405
 Name: Liel Zilberman, ID: 212480974
