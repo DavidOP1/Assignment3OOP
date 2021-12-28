@@ -160,7 +160,7 @@ graphAlgo.load_from_json('file_name'.json) #file name of the json file which has
 
 How to use the menu (GUI):
 --
-in order to open the graphical menu the user has to run the main.py file, after running the main.py file, the menu will be opened
+in order to open the graphical menu the user has to run the Ex3.py file, after running the Ex3.py file, the menu will be opened
 
 in the menu the user can do all sorts of graphical things with the graph, but first, the user has to load a json file...
 to do so, just press the 'File' button at the top left of the window and then press 'Load', after that a dialog will appear, just enter the file name there
