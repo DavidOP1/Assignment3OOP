@@ -16,11 +16,13 @@ Sources which helped us understand the alogrithms which we used in this assignme
 
 Explaining the assignment: 
 
-The subject of the assignment is graphs. We were given interfaces which we need to implement.//complete here
+The subject of the assignment is graphs. We were given interfaces which we need to implement.
 
-NodeData : gives us information about the node(vertex), ID , location, etc, has 2 dict one which stores the edges coming into the vertex and one that stores the edges coming out of the vertx.
+Directed graphs consist of vertexes and edges, in which edges have directions, from which vertex they go from to their destination vertex. In this assignment we deal with a couple of problems in this graphs, e.g: TSP, finding the shortest path, center , etc.
 
-EdgeData interface: gives us information about the edge, since it's a directed graph , this edge has source node and destination node. We can also get the weight of this node.
+NodeData class: gives us information about the node(vertex), ID , location, etc, has 2 dict one which stores the edges coming into the vertex and one that stores the edges coming out of the vertex.
+
+EdgeData class: gives us information about the edge, since it's a directed graph , this edge has source node and destination node. We can also get the weight of this node.
 
 GeoLocation class: gives us information about the location of the node in the graph, (x,y,z).
 
